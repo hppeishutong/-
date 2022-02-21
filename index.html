@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="open" width="600px" height="600px"></canvas>
+
+    <script>
+      var  cv=document.getElementById('open')
+      var open = cv.getContext('2d')
+      for(i=0;i<15;i++){
+          open.moveTo(20+i*40,20)
+          open.lineTo(20+i*40,580)
+          open.stroke();
+          open.moveTo(20,20+i*40)
+          open.lineTo(580,20+i*40)
+          open.strokeStyle="skyblue"
+          open.stroke();
+
+      }
+
+    </script>
+</body>
+</html>
